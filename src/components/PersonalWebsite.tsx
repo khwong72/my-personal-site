@@ -8,6 +8,7 @@ const ESCAPED_CHARS = {
     "'": "&apos;",
     ">": "&gt;",
     "<": "&lt;"
+};
 
 const PersonalWebsite = () => {
   const [menuOpen, setMenuOpen] = useState(false);
