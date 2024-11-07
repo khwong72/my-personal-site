@@ -2,17 +2,10 @@ import React, { useState } from 'react';
 import { ExternalLink, ArrowRight, Calendar, Clock, Video, Menu } from 'lucide-react';
 import { siteConfig } from '../config/content';
 
-const ESCAPED_CHARS = {
-    "&": "&amp;",
-    '"': "&quot;",
-    "'": "&apos;",
-    ">": "&gt;",
-    "<": "&lt;"
-};
 
 const PersonalWebsite = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [hoveredSection, setHoveredSection] = useState(null);
+  const [hoveredSection, setHoveredSection] = useState<string | null>(null);
   const [selectedDuration, setSelectedDuration] = useState('30min');
 
   return (
